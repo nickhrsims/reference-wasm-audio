@@ -38,7 +38,7 @@ clean:
 	@if [ -d ${OUT_DIR} ]; then rm -r ${OUT_DIR}; fi
 	@if [ -d ${EXAMPLE_OUT_DIR} ]; then rm -r ${EXAMPLE_OUT_DIR}; fi
 
-example: ${OUT}
+example: all
 	@if [ ! -d ${EXAMPLE_OUT_DIR} ]; then mkdir ${EXAMPLE_OUT_DIR}; fi
 	@cp dist/* ${EXAMPLE_OUT_DIR}
 	@cp example/* ${EXAMPLE_OUT_DIR}
