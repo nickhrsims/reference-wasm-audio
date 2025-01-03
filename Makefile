@@ -1,7 +1,7 @@
 OUT_DIR         := dist
 EXAMPLE_OUT_DIR := example.dist
 
-SRC  := src/audio_passthrough.cpp
+SRC  := src/audio_gain.cpp
 OUT  := ${OUT_DIR}/audio-passthrough.js
 
 LIB_IN  := src/index.js
