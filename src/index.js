@@ -18,3 +18,9 @@ export function createEmscriptenAudioWorkletNode(audioContext, wasmModule) {
   });
 }
 
+/**
+ *
+ */
+export function setParam(node, context, key, value) {
+  node.parameters.get(key).setValueAtTime(value, context.currentTime);
+}
